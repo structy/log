@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/nuveo/log"
+	"github.com/structy/log"
 )
 
 func main() {

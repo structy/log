@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/nuveo/log"
-	_ "github.com/nuveo/log/adapters/sentry"
+	"github.com/structy/log"
+	_ "github.com/structy/log/adapters/sentry"
 )
 
 func main() {

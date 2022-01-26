@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/nuveo/log"
+	"github.com/structy/log"
 )
 
 var now = time.Now

@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/nuveo/log"
+	"github.com/structy/log"
 )
 
 func TestFileWrite(t *testing.T) {

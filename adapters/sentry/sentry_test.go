@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/getsentry/raven-go"
-	"github.com/nuveo/log"
+	"github.com/structy/log"
 )
 
 func TestSentryLog(t *testing.T) {

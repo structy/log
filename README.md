@@ -1,19 +1,18 @@
-# nuveo/log
-[![Build Status](https://travis-ci.org/nuveo/log.svg?branch=master)](https://travis-ci.org/nuveo/log)
-A simple to use log system, minimalist but with features for debugging and differentiation of messages
+# structy/log
 
+[![Build Status](https://travis-ci.org/structy/log.svg?branch=master)](https://travis-ci.org/structy/log)
+A simple to use log system, minimalist but with features for debugging and differentiation of messages
 
 ## Example
 
 [![Example](examples/example.png)](examples/example.go)
-
 
 ```go
 package main
 
 import (
     "fmt"
-    "github.com/nuveo/log"
+    "github.com/structy/log"
 )
 
 func main() {
