@@ -43,3 +43,29 @@ func TestFileWrite(t *testing.T) {
 		t.Fatalf("Error expectd %q, got %q\n", expectd, string(b))
 	}
 }
+
+func TestDebugFileWrite(t *testing.T) {
+	now = func() time.Time { return time.Unix(1498405744, 0) }
+
+	log.DebugMode = true
+	fileWrite(
+		log.DebugLog,
+		log.LineOut,
+		map[string]interface{}{"fileName": "logfile-debug.txt"},
+		"test debug log")
+
+	b, err := ioutil.ReadFile("logfile-debug.txt")
+	if err != nil {
+		t.Fatal(err.Error())
+	}
+	err = os.Remove("logfile-debug.txt")
+	if err != nil {
+		t.Fatal(err.Error())
+		return
+	}
+
+	expectd := "2017/06/25 15:49:04 [debug] .:0 test debug log\n"
+	if string(b) != expectd {
+		t.Fatalf("Error expectd %q, got %q\n", expectd, string(b))
+	}
+}
