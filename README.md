@@ -1,6 +1,7 @@
 # structy/log
 
-[![Build Status](https://travis-ci.org/structy/log.svg?branch=master)](https://travis-ci.org/structy/log)
+[![build](https://github.com/structy/log/actions/workflows/build.yml/badge.svg)](https://github.com/structy/log/actions/workflows/build.yml)
+
 A simple to use log system, minimalist but with features for debugging and differentiation of messages
 
 ## Example
